@@ -29,10 +29,11 @@ Esta plataforma te permite **analizar datos de blockchain de manera inteligente*
 ## ✨ Características Principales
 
 ### 🤖 Inteligencia Artificial Integrada
-- **Detección de anomalías** con Isolation Forest
-- **Predicciones de volumen** con regresión lineal
+- **Motor de análisis avanzado** con múltiples algoritmos de IA
+- **Predicciones inteligentes** con Regresión Lineal, Ridge y Random Forest
 - **Análisis de patrones** temporales automáticos
-- **Insights inteligentes** generados automáticamente
+- **Pronósticos extensos** generados por IA avanzada
+- **Detección de anomalías** con algoritmos especializados
 
 ### 📊 Visualizaciones Avanzadas
 - **Dashboards interactivos** en tiempo real
@@ -74,23 +75,24 @@ FLUSH PRIVILEGES;
 
 ### 4️⃣ Ejecutar la Aplicación
 ```bash
-# Opción 1: Pipeline completo (recomendado)
+# Opción 1: Aplicación web completa con IA (recomendado)
+python app_final.py
+
+# Opción 2: Pipeline completo
 python main.py
 
-# Opción 2: Aplicación web interactiva
-python app.py
-
-# Opción 3: Aplicación simple
+# Opción 3: Aplicación web simple
 python app_simple.py
 ```
 
 ## 🎮 Cómo Usar la Aplicación
 
 ### 🌐 Aplicación Web Interactiva
-1. Ejecuta `python app.py`
+1. Ejecuta `python app_final.py`
 2. Abre tu navegador en `http://localhost:8050`
-3. Explora los dashboards interactivos
+3. Explora los dashboards interactivos con IA
 4. Usa los filtros para análisis específicos
+5. Genera pronósticos inteligentes con IA
 
 ### 📊 Dashboards Disponibles
 
@@ -147,8 +149,9 @@ graph TB
 ```
 blockchain/
 ├── 🚀 main.py                    # Pipeline principal
-├── 🌐 app.py                     # Aplicación web completa
+├── 🌐 app_final.py               # Aplicación web completa con IA
 ├── 🎯 app_simple.py             # Aplicación web simple
+├── 🤖 ai_diagnostic.py          # Motor de análisis de IA avanzada
 ├── ⚙️ config.py                 # Configuración
 ├── 🗄️ database_setup.py         # Setup de MySQL
 ├── 📊 data_processor.py          # Procesamiento de datos
@@ -173,6 +176,9 @@ python data_processor.py
 
 # Solo análisis de IA
 python ai_analytics.py
+
+# Motor de análisis avanzado
+python ai_diagnostic.py
 
 # Solo dashboards
 python create_dashboards.py
@@ -202,10 +208,11 @@ python mysql_loader.py
 - **Nuevos contratos desplegados**
 
 ### 🤖 Métricas de IA
-- **Número de anomalías detectadas**
-- **Precisión de predicciones**
-- **Confianza en insights**
-- **Tendencias identificadas**
+- **Motor de análisis avanzado** con 10 secciones de diagnóstico
+- **Precisión de predicciones** con múltiples algoritmos
+- **Confianza en insights** generados automáticamente
+- **Pronósticos extensos** con análisis detallado
+- **Detección de anomalías** con clasificación por severidad
 
 ## 🔧 Configuración Avanzada
 
@@ -257,13 +264,46 @@ mkdir -p data/raw data/processed data/csv
 chmod 755 data/raw data/processed data/csv
 ```
 
+## 🤖 Motor de Análisis de IA Avanzada
+
+### 📊 Diagnósticos Completos
+El motor de IA genera reportes extensos con **10 secciones principales**:
+
+1. **📊 Metadatos del Análisis** - Información técnica del proceso
+2. **📋 Resumen Ejecutivo** - Hallazgos clave y acciones inmediatas
+3. **📈 Análisis de Mercado** - Tendencias y patrones de volumen
+4. **📊 Análisis Técnico** - Indicadores RSI, MACD, medias móviles
+5. **⚠️ Evaluación de Riesgos** - Factores de riesgo y mitigación
+6. **🔮 Predicciones** - Escenarios optimista, base y pesimista
+7. **🔍 Detección de Anomalías** - Patrones inusuales detectados
+8. **🔗 Análisis de Correlaciones** - Relaciones entre variables
+9. **💡 Recomendaciones** - Estrategias inmediatas y a largo plazo
+10. **📝 Conclusiones** - Próximos pasos y métricas de éxito
+
+### 🎯 Algoritmos de IA Disponibles
+- **📈 Regresión Lineal**: Rápido y eficiente para tendencias lineales
+- **🛡️ Ridge Regression**: Maneja multicolinealidad y evita sobreajuste
+- **🌲 Random Forest**: Captura relaciones complejas y no lineales
+
+### 🚀 Uso del Motor de IA
+```python
+# Crear motor de análisis
+engine = AIDiagnosticEngine()
+
+# Ejecutar análisis completo
+diagnostic = engine.generate_comprehensive_diagnostic(blockchain_data)
+
+# Generar reporte extenso
+report = engine.format_diagnostic_report(diagnostic)
+```
+
 ## 🎯 Casos de Uso
 
 ### 🔍 Para Analistas de Datos
-- **Análisis de tendencias** blockchain
-- **Detección de patrones** anómalos
-- **Predicciones de mercado**
-- **Reportes automatizados**
+- **Análisis de tendencias** blockchain con IA avanzada
+- **Detección de patrones** anómalos automática
+- **Predicciones de mercado** con múltiples escenarios
+- **Reportes automatizados** extensos y detallados
 
 ### 🏢 Para Empresas
 - **Monitoreo de transacciones**
