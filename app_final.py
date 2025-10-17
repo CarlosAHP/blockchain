@@ -612,7 +612,73 @@ app.layout = dbc.Container([
                             dbc.Button("Actualizar Graficos", id="update-button", color="success", className="me-2"),
                             dbc.Button("🤖 Pronostico IA Blockchain", id="gemini-forecast-button", color="warning")
                         ], className="mt-3")
-                    ])
+                    ]),
+                    
+                    # Sección informativa de modelos de IA
+                    html.Hr(),
+                    html.H5("🤖 Información de Modelos de IA", className="text-center mb-4"),
+                    
+                    dbc.Row([
+                        # Regresión Lineal
+                        dbc.Col([
+                            dbc.Card([
+                                dbc.CardHeader([
+                                    html.H5("📈 Regresión Lineal", className="mb-0 text-primary")
+                                ]),
+                                dbc.CardBody([
+                                    html.P("Modelo que encuentra la mejor línea recta que se ajusta a los datos históricos.", className="text-muted"),
+                                    html.H6("✅ Ventajas:", className="text-success"),
+                                    html.Ul([
+                                        html.Li("Rápido y eficiente"),
+                                        html.Li("Fácil de interpretar"),
+                                        html.Li("Bueno para tendencias lineales")
+                                    ]),
+                                    html.H6("🎯 Mejor para:", className="text-info"),
+                                    html.P("Métricas con tendencias consistentes y predicciones simples", className="small")
+                                ])
+                            ], color="light", outline=True)
+                        ], width=4),
+                        
+                        # Ridge Regression
+                        dbc.Col([
+                            dbc.Card([
+                                dbc.CardHeader([
+                                    html.H5("🛡️ Ridge Regression", className="mb-0 text-warning")
+                                ]),
+                                dbc.CardBody([
+                                    html.P("Regresión lineal con regularización L2 para evitar sobreajuste.", className="text-muted"),
+                                    html.H6("✅ Ventajas:", className="text-success"),
+                                    html.Ul([
+                                        html.Li("Maneja multicolinealidad"),
+                                        html.Li("Más robusto que regresión lineal"),
+                                        html.Li("Evita sobreajuste")
+                                    ]),
+                                    html.H6("🎯 Mejor para:", className="text-info"),
+                                    html.P("Datos con muchas características correlacionadas", className="small")
+                                ])
+                            ], color="light", outline=True)
+                        ], width=4),
+                        
+                        # Random Forest
+                        dbc.Col([
+                            dbc.Card([
+                                dbc.CardHeader([
+                                    html.H5("🌲 Random Forest", className="mb-0 text-success")
+                                ]),
+                                dbc.CardBody([
+                                    html.P("Ensemble de árboles de decisión que captura relaciones no lineales.", className="text-muted"),
+                                    html.H6("✅ Ventajas:", className="text-success"),
+                                    html.Ul([
+                                        html.Li("Maneja relaciones complejas"),
+                                        html.Li("Resistente a outliers"),
+                                        html.Li("No requiere escalado de datos")
+                                    ]),
+                                    html.H6("🎯 Mejor para:", className="text-info"),
+                                    html.P("Patrones complejos y análisis avanzados", className="small")
+                                ])
+                            ], color="light", outline=True)
+                        ], width=4)
+                    ], className="mt-3")
                 ])
             ])
         ], width=12)
